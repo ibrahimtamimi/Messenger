@@ -1,0 +1,33 @@
+.DS_Store
+.AppleDouble
+.LSOverride
+azure.err
+iisnode.yml
+
+# Icon must ends with two \r.
+Icon
+
+
+# Thumbnails
+._*
+
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+.log
+node_modules/
+db/
+client/lib/
+client/dist/
+coverage/
+
+# Build files
+dist/
+
+# Floobits
+.floo
+.floobit
+.floo
+.flooignore
+
+## API keys ##
