@@ -3,29 +3,29 @@ angular.module('Massenger', [
   'Massenger.auth',
   'TeamUp.profile',
   'ngRoute',
-  'ngMap'
-]);
+  'ngMap',
+  'ngMaterial',
+  'ngMessages',
+  'ngFileUpload',
+  'TeamUp.find'
+])
 .config(function ($routeProvider, $httpProvider) {
   $routeProvider
     .when('/home', {
       templateUrl: 'index.html',
-      controller: 'gamesController'
+      controller: ''
     })
-    .when('/signin', {
-      templateUrl: 'app/auth/signin.html',
-      controller: 'AuthController'
-    })
-    .when('/signup', {
-      templateUrl: 'app/auth/signup.html',
+    .when('/login', {
+      templateUrl: 'app/Auth/login.html',
       controller: 'AuthController'
     })
     // .when('/profile/:id', {
     //   templateUrl: 'app/profile/profile.html',
     //   controller: 'profileController',
     // })
-    // .otherwise({
-    //   redirectTo: '/'
-    // });
+    .otherwise({
+      redirectTo: '/'
+    });
     
 });
 
