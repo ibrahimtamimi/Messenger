@@ -1,4 +1,4 @@
-angular.module('Massenger.auth', [])
+angular.module('Messenger.auth', [])
 .controller('AuthController', function ($scope, $window, $location) {
 	$scope.fbLogin = function () {
         FB.login(function (response) {
